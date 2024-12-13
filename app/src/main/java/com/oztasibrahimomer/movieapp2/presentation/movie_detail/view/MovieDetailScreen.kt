@@ -124,6 +124,19 @@ fun MovieDetailScreen(
 
                     Spacer(modifier = Modifier.height(3.dp))
 
+
+                    Text(
+                        text = it.Type,
+                        fontSize = 12.sp,
+                        fontWeight = FontWeight.Bold,
+                        textAlign = TextAlign.Center,
+                        color = Color.White
+                    )
+
+                    Spacer(modifier = Modifier.height(3.dp))
+
+
+
                 }
             }
 

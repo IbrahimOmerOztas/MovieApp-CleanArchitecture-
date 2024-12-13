@@ -3,6 +3,7 @@ package com.oztasibrahimomer.movieapp2.presentation.movies.views
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.CircleShape
@@ -44,6 +45,7 @@ fun MovieSearchBar(
     var isHintDisplayed by remember{ mutableStateOf(hint!="")}
     
     Box(modifier = modifier.clickable {  }){
+        Spacer(modifier = Modifier.height(10.dp))
         
         TextField(
             value = text ,
@@ -63,9 +65,10 @@ fun MovieSearchBar(
                 unfocusedIndicatorColor = Color.Transparent
 
             ),
+            shape= RoundedCornerShape(12.dp),
             modifier = modifier
                 .shadow(5.dp, RectangleShape)
-                .height(70.dp)
+                .height(60.dp)
                 .padding(horizontal = 10.dp)
                 .onFocusChanged {
 

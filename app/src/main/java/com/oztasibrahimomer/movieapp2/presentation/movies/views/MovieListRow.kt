@@ -50,10 +50,10 @@ fun MovieListRow(
             model = movie.Poster,
             contentDescription = "",
             modifier = Modifier
-                .padding(15.dp)
-                .size(200.dp, 200.dp)
+                .padding(10.dp)
+                .size(200.dp, 220.dp)
                 .clip(RectangleShape)
-                .border(2.dp, color = Color.Red, RectangleShape)
+
         )
 
         Column(
@@ -64,9 +64,9 @@ fun MovieListRow(
             horizontalAlignment = Alignment.CenterHorizontally
         ){
 
-            Text(text = movie.Title, fontSize = 15.sp, fontWeight = FontWeight.ExtraBold, textAlign = TextAlign.Center)
+            Text(text = movie.Title, fontSize = 13.sp, fontWeight = FontWeight.ExtraBold, textAlign = TextAlign.Center,color=Color.White)
             Spacer(modifier = Modifier.height(10.dp))
-            Text(text = movie.Year, fontSize = 12.sp, fontWeight = FontWeight.SemiBold, textAlign = TextAlign.Center)
+            Text(text = movie.Year, fontSize = 12.sp, fontWeight = FontWeight.SemiBold, textAlign = TextAlign.Center,color=Color.White)
 
 
 
